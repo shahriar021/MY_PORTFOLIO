@@ -13,7 +13,7 @@ export default function About() {
       <div className="grids">
         <div className="nameNinfo">
         <div data-aos="fade-down" className="boxes">
-          <img src={require('../../styles/shahriar.JPG')} style={{width:"200px",height:"200px"}}/>
+          <img src={require('../../styles/shahriar.JPG')} style={{width:"200px",height:"200px"}} alt="Description of the image"/>
         </div>
         <div data-aos="flip-up" className="boxes">
   Hi, I am Shahriar Chowdhury
