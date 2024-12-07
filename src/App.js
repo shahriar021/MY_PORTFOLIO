@@ -12,11 +12,9 @@ function App() {
       <div className="App">
         <Header />
         
-        {/* Render About component initially */}
-        <About />
-        
-        {/* Define routes for Projects and Contact */}
+        {/* Define routes, including the default index route for About */}
         <Routes>
+          <Route index element={<About />} /> {/* This will render About at the root */}
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
