@@ -6,22 +6,23 @@ import Projects from './components/screen/Projects';
 import Footer from './components/Footer';
 import Contact from './components/screen/Contact';
 
-
-
-
 function App() {
   return (
     <Router>
       <div className="App">
         <Header />
-        <About/>
+        
+        {/* Render About component initially */}
+        <About />
+        
+        {/* Define routes for Projects and Contact */}
         <Routes>
           <Route path="/about" element={<About />} />
-          
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer/>
+        
+        <Footer />
       </div>
     </Router>
   );
